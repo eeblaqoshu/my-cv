@@ -36,7 +36,7 @@ export default function Myprojects() {
     },
     {
       id: 4,
-      title: "Website Regenerasi",
+      title: "Website E-Voting Regenerasi PCC",
       img: project_4,
       description:
         "Merancang dan membuat website untuk kegiatan regenerasi UKM PCC, website ini menampilkan proses pemilihan admin PCC tahun 2026.",

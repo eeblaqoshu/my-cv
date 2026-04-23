@@ -5,9 +5,9 @@ export default function Navbar() {
 
   const menuItems = [
     { name: "About", href: "#about" },
-    { name: "My Projects", href: "#projects" },
-    { name: "My Activities", href: "#activities" },
-    { name: "My Certificates", href: "#certificates" },
+    { name: "Projek Ku", href: "#projects" },
+    { name: "Kegiatan Ku", href: "#activities" },
+    { name: "Sertifikat Ku", href: "#certificates" },
     { name: "Contact", href: "#contact" },
   ];
 
@@ -15,7 +15,7 @@ export default function Navbar() {
     <nav className="fixed top-0 w-full z-50 border-b border-gray-300 bg-black/25 backdrop-blur-md">
       <div className="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between text-white">
         {/* Logo */}
-        <div className="gabarito-semibold text-2xl">EEBLA</div>
+        <a href="#home" className="gabarito-semibold text-2xl">EEBLA</a>
 
         {/* Menu */}
         <ul className="hidden md:flex space-x-16 text-sm gabarito-medium">

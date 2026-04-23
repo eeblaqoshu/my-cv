@@ -15,28 +15,28 @@ export default function MyActivities() {
       title: "Kegiatan Magang pada PT Telkom Semarang",
       img: PKL,
       alt: "magang",
-      desc: "Mempelajari bidang web development dengan menggunakan React dan NodeJs, serta mendalami database non-relasional yaitu MongoDB, dilaksanakan pada 2 September 2024 hingga 20 Februari 2025.",
+      desc: "Mempelajari bidang web development dengan menggunakan React dan NodeJs, serta mendalami database MongoDB, telah dilaksanakan pada 2 September 2024 hingga 20 Februari 2025.",
     },
     {
       id: 2,
       title: "Kegiatan GTP (Goes To Public) PCC",
       img: GTP,
       alt: "GTP",
-      desc: "Berpartisipasi dalam program pelatihan web development pada SMAN 9 Semarang dan bakti sosial di Panti Asuhan Manarul Mabrur, berperan sebagai PJ Humas, dilaksanakan pada 13 Maret 2026.",
+      desc: "Berpartisipasi dalam program pelatihan web development pada SMAN 9 Semarang dan bakti sosial di Panti Asuhan Manarul Mabrur, berperan sebagai PJ Humas, telah dilaksanakan pada 13 Maret 2026.",
     },
     {
       id: 3,
       title: "Kegiatan Uji Kompetensi Keahlian SKANEGA",
       img: UKK_SMK,
       alt: "UKK SMK",
-      desc: "Ujian praktek akhir untuk memvalidasi kemampuan teknis di bidang Rekayasa Perangkat Lunak., dilaksanakan pada 19 - 20 November 2024",
+      desc: "Ujian praktek akhir untuk memvalidasi kemampuan teknis di bidang Rekayasa Perangkat Lunak, telah dilaksanakan pada 19 - 20 November 2024",
     },
     {
       id: 4,
       title: "Kegiatan Regenerasi PCC",
       img: REGENERASI,
       alt: "Regenerasi PCC",
-      desc: "Proses seleksi dan pelatihan anggota baru untuk meneruskan kepengurusan organisasi, berperan sebagai anggota Sie Web, dilaksanakan pada 12 April 2026.",
+      desc: "Proses pemilihan penerus admin PCC melalui website e-voting, berperan sebagai anggota Sie Web, telah dilaksanakan pada 12 April 2026.",
     },
   ];
 
