@@ -58,7 +58,7 @@ export default function About() {
                 <ul className="text-white text-lg md:text-xl gabarito-normal">
                   <li className="mb-1">• ECC (English Club) (2019 - 2020)</li>
                   <li className="mb-1">• Anggota Perpustakaan (2022 - 2024)</li>
-                  <li className="mb-1">• Aozora Kurabao (2024)</li>
+                  <li className="mb-1">• Aozora Kurabu (2024)</li>
                   <li className="mb-1">• Anggota Aktif PCC (2025 - present)</li>
                 </ul>
               </div>
