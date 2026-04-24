@@ -17,6 +17,7 @@ export default function Myprojects() {
       id: 1,
       title: "Profile Design",
       img: project_1,
+      link: "https://www.figma.com/design/uLzhMkbffYqcwFgUOGZkX7/Profiile-Website-Design?node-id=0-1&t=zBWXSmCrPbw3G4Zi-1",
       description:
         "Merancang profile design dengan menggunakan tool figma, saya membuatnya dengan memperhatikan ukuran komponen didalamnya dan jarak ruang,  sehingga menampilkan desain yang siap pakai.",
     },
@@ -24,6 +25,7 @@ export default function Myprojects() {
       id: 2,
       title: "Website Cuaca",
       img: project_2,
+      link: "https://github.com/eeblaqoshu/weather-app",
       description:
         "Website cuaca yang bisa memilih daerah dengan library react dan memanfaatkan API OpenWeather, website ini menampilkan informasi cuaca secara real-time.",
     },
@@ -31,6 +33,7 @@ export default function Myprojects() {
       id: 3,
       title: "Website Laundry",
       img: project_3,
+      link: "https://github.com/eeblaqoshu/Laundry",
       description:
         "Website bisnis laundry yang dibuat dengan PHP sebagai backend dan MySQL sebagai database, serta styling menggunakan boostrap 5.3, website ini memiliki fitur untuk memesan layanan laundry secara online, melihat status pesanan, dan mengelola data pelanggan.",
     },
@@ -38,6 +41,7 @@ export default function Myprojects() {
       id: 4,
       title: "Website E-Voting Regenerasi PCC",
       img: project_4,
+      link: "https://regenerasi2026.ukmpcc.org",
       description:
         "Merancang dan membuat website untuk kegiatan regenerasi UKM PCC, website ini menampilkan proses pemilihan admin PCC tahun 2026.",
     },
@@ -52,6 +56,7 @@ export default function Myprojects() {
       id: 6,
       title: "Website CV",
       img: project_6,
+      link: "https://cvbahrul.pages.dev/",
       description:
         "Sebuah website curriculum vitae yang dibuat dengan library React dan Tailwind CSS, website ini menampilkan informasi pribadi dan projek - projek yang sudah saya kerjakan saat menjalani proses magang di PT Telkom Semarang.",
     },
@@ -67,7 +72,7 @@ export default function Myprojects() {
   return (
     <div className="bg-[#0C1826] px-8 md:px-14 py-6 md:py-14 border-t border-white md:border-gray-500 space-y-10">
       <h3 className="gabarito-medium text-4xl text-center text-yellow-500">
-        Recap Project
+        Projek Ku
       </h3>
 
       {/* Tampilan Desktop */}
@@ -165,6 +170,9 @@ function ProjectCard({ project }) {
         <p className="text-gray-300 gabarito-normal text-start flex-grow leading-relaxed">
           {project.description}
         </p>
+        <a href={project.link} target="_blank" className="text-gray-200 mt-2 bottom-0 gabarito-medium text-start hover:text-yellow-500 flex-grow leading-relaxed">
+         Lihat Projek
+        </a>
       </div>
     </div>
   );

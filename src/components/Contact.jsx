@@ -50,7 +50,7 @@ export default function Contact() {
   return (
     <div
       id="contact"
-      className="bg-[#0C1826] px-6 md:px-14 py-10 md:py-12 border-t border-gray-700 min-h-screen flex flex-col items-center justify-center space-y-12 overflow-hidden"
+      className="bg-[#0C1826] px-6 md:px-14 py-10 md:py-12 border-t border-white min-h-screen flex flex-col items-center justify-center space-y-12 overflow-hidden"
     >
       <h3 className="gabarito-medium text-4xl text-center text-yellow-500 font-bold">
         Contact Me
@@ -103,7 +103,7 @@ export default function Contact() {
               key={contact.id}
               target="_blank"
               rel="noopener noreferrer"
-              className={`flex items-center w-full rounded-full p-1 shadow-lg`}
+              className={`flex items-center w-full rounded-full p-1 shadow-lg transition-all duration-300 transform hover:scale-108 active:scale-95 active:opacity-90`}
             >
               <div
                 className={`p-3 rounded-full flex-shrink-0 hover:${contact.bg} transition-all duration-300`}
@@ -114,7 +114,7 @@ export default function Contact() {
                   className="w-5 h-5 object-contain"
                 />
               </div>
-              <span className="text-white text-center text-xs font-medium px-4 truncate">
+              <span className="text-white text-center hover:text-yellow-500 text-xs font-medium px-4 truncate">
                 {contact.name}
               </span>
             </a>

@@ -2,8 +2,8 @@ import me from "../assets/image/Group 17.png";
 export default function About() {
   return (
     <div className="bg-[#0C1826] px-8 md:px-4 py-6 md:py-14 border-t border-white md:border-gray-500">
-      <div className="max-w-6xl mx-auto flex flex-col md:flex-row space-x-14 items-center md:items-start gap-2 md:gap-10">
-        <h3 className="md:hidden w-full text-center mx-auto justify-center gabarito-medium text-yellow-500 text-3xl">
+      <div className="max-w-6xl mx-auto flex flex-col lg:flex-row space-x-14 items-center lg:items-start gap-2 md:gap-10">
+        <h3 className="lg:hidden w-full text-center mx-auto justify-center gabarito-medium text-yellow-500 text-3xl">
           Who Am I?
         </h3>
 
@@ -57,7 +57,7 @@ export default function About() {
                 </h4>
                 <ul className="text-white text-lg md:text-xl gabarito-normal">
                   <li className="mb-1">• ECC (English Club) (2019 - 2020)</li>
-                  <li className="mb-1">• Anggota Perpustakaan (2022 - 2024)</li>
+                  <li className="mb-1">• Anggota Perpus Skanega (2022 - 2024)</li>
                   <li className="mb-1">• Aozora Kurabu (2024)</li>
                   <li className="mb-1">• Anggota Aktif PCC (2025 - present)</li>
                 </ul>
@@ -90,6 +90,10 @@ export default function About() {
                   <li>• Git</li>
                   <li>• Bootstrap</li>
                   <li>• Tailwind</li>
+                  <li>• Laravel</li>
+                  <li>• Figma</li>
+                  <li>• C</li>
+                  <li>• C++</li>
                 </ul>
               </div>
             </div>

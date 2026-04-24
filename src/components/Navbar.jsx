@@ -18,7 +18,7 @@ export default function Navbar() {
         <a href="#home" className="gabarito-semibold text-2xl">EEBLA</a>
 
         {/* Menu */}
-        <ul className="hidden md:flex space-x-16 text-sm gabarito-medium">
+        <ul className="hidden lg:flex space-x-16 text-sm gabarito-medium">
           {menuItems.map((item) => (
             <li key={item.href}>
               <a href={item.href} className="hover:text-yellow-300 transition">
@@ -31,7 +31,7 @@ export default function Navbar() {
         {/* Buat navbar mobile */}
         <button
           onClick={() => setIsOpen(!isOpen)}
-          className="md:hidden p-2 focus:outline-none"
+          className="lg:hidden p-2 focus:outline-none"
         >
           <svg
             className="w-8 h-8"
@@ -60,7 +60,7 @@ export default function Navbar() {
 
       {/* menu navbar mobile */}
       <div
-        className={`md:hidden transition-all duration-300 ease-in-out backdrop-blur-md ${isOpen ? "max-h-96 opacity-100" : "max-h-0 opacity-0 overflow-hidden"}`}
+        className={`lg:hidden transition-all duration-300 ease-in-out backdrop-blur-md ${isOpen ? "max-h-96 opacity-100" : "max-h-0 opacity-0 overflow-hidden"}`}
       >
         <ul className="px-6 py-6 space-y-4 text-center">
           {menuItems.map((item) => (

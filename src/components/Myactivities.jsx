@@ -8,7 +8,6 @@ import REGENERASI from "../assets/ordinary/regenerasi.jpeg";
 export default function MyActivities() {
   const [currentIndex, setCurrentIndex] = useState(0);
 
-  // 1. Data ditambahkan field 'desc'
   const activities = [
     {
       id: 1,
@@ -26,7 +25,7 @@ export default function MyActivities() {
     },
     {
       id: 3,
-      title: "Kegiatan Uji Kompetensi Keahlian SKANEGA",
+      title: "Kegiatan Uji Kompetensi Keahlian RPL",
       img: UKK_SMK,
       alt: "UKK SMK",
       desc: "Ujian praktek akhir untuk memvalidasi kemampuan teknis di bidang Rekayasa Perangkat Lunak, telah dilaksanakan pada 19 - 20 November 2024",

@@ -23,7 +23,7 @@ function App() {
           <div className="relative flex flex-col items-center justify-center h-full space-y-2 mt-2">
             <div className="flex flex-row space-x-5 gabarito-medium text-2xl md:text-5xl ">
               <p className="text-white">
-                Hello, <span className="text-yellow-500">I'm Albi</span>{" "}
+                Hello, <span className="text-yellow-500">I'm Albi</span>
               </p>
             </div>
             <p className="text-lg md:text-2xl gabarito-medium text-white">
