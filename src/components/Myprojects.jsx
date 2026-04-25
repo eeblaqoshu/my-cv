@@ -3,7 +3,7 @@ import project_1 from "../assets/projects/profile_design_figma.png";
 import project_2 from "../assets/projects/web_cuaca.jpg";
 import project_3 from "../assets/projects/web_laundry.png";
 import project_4 from "../assets/projects/web_regenarasi.png";
-import project_5 from "../assets/projects/web_using_firebase.png";
+import project_5 from "../assets/projects/web_statistika.png";
 import project_6 from "../assets/projects/web_cv.png";
 import project_7 from "../assets/projects/desktop_nasabah.png";
 import project_8 from "../assets/projects/desktop_rental.png";
@@ -47,10 +47,11 @@ export default function Myprojects() {
     },
     {
       id: 5,
-      title: "Website Add Items & Login with Firebase",
+      title: "Website Kalkulator Statistika",
       img: project_5,
+      link: "https://f2216cb0.kalkulator-3le.pages.dev/",
       description:
-        "Membuat website sederhana untuk mendalami penggunaan firebase sebagai menyimpan data login dan data - data yang bersifat pribadi.",
+        "Membuat website sederhana untuk memudahkan masyarakat terutama guru dan siswa dalam menyelesaikan soal matematika statistika secara cepat.",
     },
     {
       id: 6,
