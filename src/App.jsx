@@ -31,7 +31,7 @@ function App() {
             </p>
             <a
               href="#contact"
-              className="bg-yellow-500 text-center text-white gabarito-medium text-md md:text-2xl px-3 py-2 md:px-6 md:py-4 rounded-full mt-3 shadow-lg shadow-yellow-500/60"
+              className="bg-yellow-500 text-center hover:bg-yellow-600 transition-all duration-300 hover:scale-105 text-white gabarito-medium text-md md:text-2xl px-3 py-2 md:px-6 md:py-4 rounded-full mt-3 shadow-lg shadow-yellow-500/60"
             >
               Contact Now!
             </a>
