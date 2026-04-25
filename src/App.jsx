@@ -33,7 +33,7 @@ function App() {
               href="#contact"
               className="bg-yellow-500 text-center text-white gabarito-medium text-md md:text-2xl px-3 py-2 md:px-6 md:py-4 rounded-full mt-3 shadow-lg shadow-yellow-500/60"
             >
-              Contact
+              Contact Now!
             </a>
           </div>
           <Navbar />
