@@ -148,7 +148,7 @@ function ContactItem({ contact, isActive, setActive }) {
         />
       </div>
 
-      <div
+      <a href={contact.link} target="_blank" rel="noopener noreferrer"
         className={`overflow-hidden transition-all duration-500 ease-in-out flex items-center ${contact.bg} 
           ${isActive ? "max-w-[400px] opacity-100" : "max-w-0 opacity-0"}
           ${isLeft ? "rounded-l-full pr-12 -mr-8" : "rounded-r-full pl-12 -ml-8"}
@@ -157,7 +157,7 @@ function ContactItem({ contact, isActive, setActive }) {
         <div className="whitespace-nowrap px-6 py-3 text-white font-medium text-base">
           {contact.name}
         </div>
-      </div>
+      </a>
     </div>
   );
 }
