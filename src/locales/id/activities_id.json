@@ -1,0 +1,22 @@
+{
+    "title" : "Kegiatan Ku",
+    "myactivities" : [
+        {
+            "title" : "Kegiatan Magang pada PT Telkom Semarang",
+            "desc" : "Mempelajari bidang web development dengan menggunakan React dan NodeJs, serta mendalami database MongoDB, telah dilaksanakan pada 2 September 2024 hingga 20 Februari 2025."
+        },
+        {
+            "title" : "Kegiatan GTP (Goes To Public) PCC",
+            "desc" : "Berpartisipasi dalam program pelatihan web development pada SMAN 9 Semarang dan bakti sosial di Panti Asuhan Manarul Mabrur, berperan sebagai PJ Humas, telah dilaksanakan pada 13 Maret 2026."
+        },
+        {
+            "title" : "Kegiatan Uji Kompetensi Keahlian RPL",
+            "desc" : "Ujian praktek akhir untuk memvalidasi kemampuan teknis di bidang Rekayasa Perangkat Lunak, telah dilaksanakan pada 19 - 20 November 2024"
+        }, 
+        {
+            "title" : "Kegiatan Regenerasi PCC",
+            "desc" : "Proses pemilihan penerus admin PCC melalui website e-voting, berperan sebagai anggota Sie Web, telah dilaksanakan pada 12 April 2026."
+        }
+    ],
+    "close" : "Tutup"
+}

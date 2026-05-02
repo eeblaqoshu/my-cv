@@ -1,4 +1,6 @@
 import { useState } from "react";
+import { useTranslation } from "react-i18next";
+
 import { motion, AnimatePresence } from "framer-motion";
 import GTP from "../assets/ordinary/GTP.jpeg";
 import PKL from "../assets/ordinary/magang.jpeg";
@@ -6,38 +8,37 @@ import UKK_SMK from "../assets/ordinary/UKK_SMK.jpeg";
 import REGENERASI from "../assets/ordinary/regenerasi.jpeg";
 
 export default function MyActivities() {
+  const { t } = useTranslation("activities");
   const [currentIndex, setCurrentIndex] = useState(0);
 
-  const activities = [
+  const translatedActivities = t("myactivities", { returnObjects: true });
+  const activitiesAssets = [
     {
       id: 1,
-      title: "Kegiatan Magang pada PT Telkom Semarang",
       img: PKL,
       alt: "magang",
-      desc: "Mempelajari bidang web development dengan menggunakan React dan NodeJs, serta mendalami database MongoDB, telah dilaksanakan pada 2 September 2024 hingga 20 Februari 2025.",
     },
     {
       id: 2,
-      title: "Kegiatan GTP (Goes To Public) PCC",
       img: GTP,
       alt: "GTP",
-      desc: "Berpartisipasi dalam program pelatihan web development pada SMAN 9 Semarang dan bakti sosial di Panti Asuhan Manarul Mabrur, berperan sebagai PJ Humas, telah dilaksanakan pada 13 Maret 2026.",
     },
     {
       id: 3,
-      title: "Kegiatan Uji Kompetensi Keahlian RPL",
       img: UKK_SMK,
       alt: "UKK SMK",
-      desc: "Ujian praktek akhir untuk memvalidasi kemampuan teknis di bidang Rekayasa Perangkat Lunak, telah dilaksanakan pada 19 - 20 November 2024",
     },
     {
       id: 4,
-      title: "Kegiatan Regenerasi PCC",
       img: REGENERASI,
       alt: "Regenerasi PCC",
-      desc: "Proses pemilihan penerus admin PCC melalui website e-voting, berperan sebagai anggota Sie Web, telah dilaksanakan pada 12 April 2026.",
     },
   ];
+
+  const activities = translatedActivities.map((item, index) => ({
+    ...item,
+    ...activitiesAssets[index]
+  }));
 
   const nextSlide = () => {
     setCurrentIndex((prev) => (prev === activities.length - 1 ? 0 : prev + 1));
@@ -54,7 +55,7 @@ export default function MyActivities() {
     >
       <div className="max-w-6xl mx-auto">
         <h3 className="gabarito-medium text-4xl text-center text-yellow-500 mb-12">
-          Kegiatan Ku
+          {t("title")}
         </h3>
 
         {/* --- TAMPILAN DESKTOP --- */}
@@ -135,7 +136,7 @@ export default function MyActivities() {
 }
 
 function ActivityCard({ activity }) {
-  // 2. State lokal untuk toggle deskripsi per kartu
+  const { t } = useTranslation("activities");
   const [showDesc, setShowDesc] = useState(false);
 
   return (
@@ -173,7 +174,7 @@ function ActivityCard({ activity }) {
                   {activity.desc}
                 </p>
                 <span className="text-yellow-500 gabarito-normal text-xs mt-4 block font-bold uppercase tracking-tighter">
-                  Tutup
+                  {t("close")}
                 </span>
               </div>
             </motion.div>

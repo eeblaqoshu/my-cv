@@ -1,0 +1,26 @@
+{
+    "title" : "My Certificates",
+    "mycertificates" : [
+        {
+            "title" : "PT Telkom Semarang Internship Certificate",
+            "desc" : "Certificate of Appreciation for completing the PT Telkom Semarang internship program."
+        },
+        {
+            "title" : "GTP (Goes To Public) PCC Certificate",
+            "desc" : "Certificate of participation in the GTP PCC program as Public Relations Officer."
+        },
+        {
+            "title" : "CyberSecurity Certificate Merdekaber",
+            "desc" : "Certificate of completion of cybersecurity training by Merdekasiber."
+        }, 
+        {
+            "title" : "Flutter Android Study Jams Certificate",
+            "desc" : "Certificate of completion of the Flutter Android course from the Informatics Student Association of PGRI Semarang University."
+        },
+        {
+            "title" : "Certificate of Expertise",
+            "desc" : "Software Engineering (RPL) competency validation certificate."
+        }
+    ],
+    "close" : "Close"
+}

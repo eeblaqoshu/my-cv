@@ -1,5 +1,7 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import { useTranslation } from "react-i18next";
+
 import sertifikat_1 from "../assets/Certificates/sertifikat_magang.jpeg";
 import sertifikat_2 from "../assets/Certificates/sertifikat_gtp.jpeg";
 import sertifikat_3 from "../assets/Certificates/sertifikat_sharing_cybersecurity.jpeg";
@@ -7,16 +9,22 @@ import sertifikat_4 from "../assets/Certificates/sertifikat_android_study_jams.j
 import sertifikat_5 from "../assets/Certificates/sertifikat_kompetensi.jpeg";
 
 export default function MyCertificates() {
+  const { t } = useTranslation("certificates");
   const [currentIndex, setCurrentIndex] = useState(0);
 
-  // 1. Data sertifikat dalam array
-  const certificates = [
-    { id: 1, title: "Sertifikat Magang PT Telkom Semarang", img: sertifikat_1, desc: "Sertifikat Penghargaan telah menyelesaikan program magang PT Telkom Semarang." },
-    { id: 2, title: "Sertifikat GTP (Goes To Public) PCC", img: sertifikat_2, desc: "Sertifikat partisipasi dalam program GTP PCC sebagai PJ Humas." },
-    { id: 3, title: "Sertifikat CyberSecurity Merdekasiber", img: sertifikat_3, desc: "Sertifikat penyelesaian pelatihan cybersecurity oleh Merdekasiber." },
-    { id: 4, title: "Sertifikat Flutter Android Study Jams", img: sertifikat_4, desc: "Sertifikat penyelesaian kursus Flutter Android dari Himpunan Mahasiswa Informatika Universitas PGRI Semarang." },
-    { id: 5, title: "Sertifikat Kompetensi Keahlian", img: sertifikat_5, desc: "Sertifikat validasi kompetensi keahlian Rekayasa Perangkat Lunak (RPL)." },
+  const translateCertificates = t("mycertificates", { returnObjects: true });
+  const certificatesAssets = [
+    { id: 1, img: sertifikat_1 },
+    { id: 2, img: sertifikat_2 },
+    { id: 3, img: sertifikat_3 },
+    { id: 4, img: sertifikat_4 },
+    { id: 5, img: sertifikat_5 },
   ];
+
+  const certificates = translateCertificates.map((item, index) => ({
+    ...item,
+    ...certificatesAssets[index]
+  }));
 
   const isSliderRequired = certificates.length > 4;
 
@@ -39,7 +47,7 @@ export default function MyCertificates() {
     >
       <div className="max-w-6xl mx-auto">
         <h3 className="gabarito-medium text-4xl text-center text-yellow-500 mb-12">
-          Sertifikat Ku
+          {t("title")}
         </h3>
 
         {/* --- TAMPILAN DESKTOP --- */}
@@ -128,6 +136,7 @@ export default function MyCertificates() {
 
 // Komponen Card Kecil
 function CertificateCard({ cert }) {
+  const { t } = useTranslation("certificates");
   const [showDesc, setShowDesc] = useState(false);
   return (
     <div className="flex flex-col space-y-4 group">
@@ -160,7 +169,7 @@ function CertificateCard({ cert }) {
                   {cert.desc}
                 </p>
                 <span className="text-yellow-500 text-xs mt-4 block font-bold uppercase tracking-tighter">
-                  Tutup
+                  {t("close")}
                 </span>
               </div>
             </motion.div>

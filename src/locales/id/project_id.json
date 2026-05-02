@@ -1,0 +1,30 @@
+{
+    "super_title" : "Projek Ku",
+    "projects" : [
+        {
+            "title" : "Desain Profil",
+            "description" : "Merancang profile design dengan menggunakan tool figma, saya membuatnya dengan memperhatikan ukuran komponen didalamnya dan jarak ruang,  sehingga menampilkan desain yang siap pakai."
+        },
+        {
+            "title" : "Website Cuaca",
+            "description" : "Website cuaca yang bisa memilih daerah dengan library react dan memanfaatkan API OpenWeather, website ini menampilkan informasi cuaca secara real-time."
+        },
+        {
+            "title" : "Website Laundry",
+            "description" : "Website bisnis laundry yang dibuat dengan PHP sebagai backend dan MySQL sebagai database, serta styling menggunakan boostrap 5.3, website ini memiliki fitur untuk memesan layanan laundry secara online, melihat status pesanan, dan mengelola data pelanggan."
+        },
+        {
+            "title" : "Website E-Voting Regenerasi PCC",
+            "description" : "Merancang dan membuat website untuk kegiatan regenerasi UKM PCC, website ini menampilkan proses pemilihan admin PCC tahun 2026."
+        },
+        {
+            "title" : "Website Kalkulator Statistika",
+            "description" : "Membuat website sederhana untuk memudahkan masyarakat terutama guru dan siswa dalam menyelesaikan soal matematika statistika secara cepat."
+        },
+        {
+            "title" : "Website CV",
+            "description" : "Sebuah website curriculum vitae yang dibuat dengan library React dan Tailwind CSS, website ini menampilkan informasi pribadi dan projek - projek yang sudah saya kerjakan saat menjalani proses magang di PT Telkom Semarang."
+        }
+    ],
+    "see_more" : "Lihat Projek"
+}

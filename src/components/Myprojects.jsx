@@ -1,4 +1,6 @@
 import { useState } from "react";
+import { useTranslation } from "react-i18next";
+
 import project_1 from "../assets/projects/profile_design_figma.png";
 import project_2 from "../assets/projects/web_cuaca.jpg";
 import project_3 from "../assets/projects/web_laundry.png";
@@ -8,60 +10,52 @@ import project_6 from "../assets/projects/web_cv.png";
 import project_7 from "../assets/projects/desktop_nasabah.png";
 import project_8 from "../assets/projects/desktop_rental.png";
 import project_9 from "../assets/projects/web_anggota_keluarga.png";
+import { t } from "i18next";
+import { img } from "framer-motion/client";
 
 export default function Myprojects() {
+  const { t } = useTranslation("projek");
   const [currentIndex, setCurrentIndex] = useState(0);
 
-  const [projects] = useState([
+  const translatedProjects = t("projects", { returnObjects: true });
+  const projectAssets = [
     {
       id: 1,
-      title: "Profile Design",
-      img: project_1,
-      link: "https://www.figma.com/design/uLzhMkbffYqcwFgUOGZkX7/Profiile-Website-Design?node-id=0-1&t=zBWXSmCrPbw3G4Zi-1",
-      description:
-        "Merancang profile design dengan menggunakan tool figma, saya membuatnya dengan memperhatikan ukuran komponen didalamnya dan jarak ruang,  sehingga menampilkan desain yang siap pakai.",
+      img : project_1,
+      link : "https://www.figma.com/design/uLzhMkbffYqcwFgUOGZkX7/Profiile-Website-Design?node-id=0-1&t=zBWXSmCrPbw3G4Zi-1"
     },
     {
       id: 2,
-      title: "Website Cuaca",
-      img: project_2,
-      link: "https://github.com/eeblaqoshu/weather-app",
-      description:
-        "Website cuaca yang bisa memilih daerah dengan library react dan memanfaatkan API OpenWeather, website ini menampilkan informasi cuaca secara real-time.",
+      img : project_2,
+      link : "https://github.com/eeblaqoshu/weather-app"
     },
     {
       id: 3,
-      title: "Website Laundry",
-      img: project_3,
-      link: "https://github.com/eeblaqoshu/Laundry",
-      description:
-        "Website bisnis laundry yang dibuat dengan PHP sebagai backend dan MySQL sebagai database, serta styling menggunakan boostrap 5.3, website ini memiliki fitur untuk memesan layanan laundry secara online, melihat status pesanan, dan mengelola data pelanggan.",
+      img : project_3,
+      link : "https://github.com/eeblaqoshu/Laundry"
     },
     {
       id: 4,
-      title: "Website E-Voting Regenerasi PCC",
-      img: project_4,
-      link: "https://regenerasi2026.ukmpcc.org",
-      description:
-        "Merancang dan membuat website untuk kegiatan regenerasi UKM PCC, website ini menampilkan proses pemilihan admin PCC tahun 2026.",
-    },
+      img : project_4,
+      link : "https://regenerasi2026.ukmpcc.org"
+    }, 
     {
       id: 5,
-      title: "Website Kalkulator Statistika",
-      img: project_5,
-      link: "https://f2216cb0.kalkulator-3le.pages.dev/",
-      description:
-        "Membuat website sederhana untuk memudahkan masyarakat terutama guru dan siswa dalam menyelesaikan soal matematika statistika secara cepat.",
-    },
+      img : project_5,
+      link : "https://f2216cb0.kalkulator-3le.pages.dev/"
+    }, 
     {
       id: 6,
-      title: "Website CV",
-      img: project_6,
-      link: "https://cvbahrul.pages.dev/",
-      description:
-        "Sebuah website curriculum vitae yang dibuat dengan library React dan Tailwind CSS, website ini menampilkan informasi pribadi dan projek - projek yang sudah saya kerjakan saat menjalani proses magang di PT Telkom Semarang.",
-    },
-  ]);
+      img : project_6,
+      link : "https://cvbahrul.pages.dev/"
+    }
+  ];
+
+  // menggabungkan data terjemahan dengan data asset lokal
+  const projects = translatedProjects.map((item, index) => ({
+    ...item,
+    ...projectAssets[index]
+  }))
 
   const nextProject = () => {
     setCurrentIndex((prev) => (prev === projects.length - 1 ? 0 : prev + 1));
@@ -73,7 +67,7 @@ export default function Myprojects() {
   return (
     <div className="bg-[#0C1826] px-8 md:px-14 py-6 md:py-14 border-t border-white md:border-gray-500 space-y-10">
       <h3 className="gabarito-medium text-4xl text-center text-yellow-500">
-        Projek Ku
+        {t("super_title")}
       </h3>
 
       {/* Tampilan Desktop */}
@@ -92,7 +86,7 @@ export default function Myprojects() {
 
       {/* Navigasi Khusus Mobile */}
       <div className="md:hidden mt-8 flex flex-col items-center space-y-4 w-full">
-        <div className="flex items-center justify-between w-full max-w-[200px">
+        <div className="flex items-center justify-between w-full max-w-[200px]">
           {/* tombol kembali */}
           <button
             onClick={prevProject}
@@ -152,6 +146,7 @@ export default function Myprojects() {
 }
 
 function ProjectCard({ project }) {
+  const { t } = useTranslation("projek");
   return (
     <div className="group">
       <div
@@ -172,7 +167,7 @@ function ProjectCard({ project }) {
           {project.description}
         </p>
         <a href={project.link} target="_blank" className="text-gray-200 mt-2 bottom-0 gabarito-medium text-start hover:text-yellow-500 flex-grow leading-relaxed">
-         Lihat Projek
+         {t("see_more")}
         </a>
       </div>
     </div>

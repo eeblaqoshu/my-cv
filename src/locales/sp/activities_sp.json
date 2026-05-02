@@ -1,0 +1,22 @@
+{
+  "title": "Mis Actividades",
+  "myactivities": [
+    {
+      "title": "Actividades de prácticas en PT Telkom Semarang",
+      "desc": "Estudiando desarrollo web utilizando React y Node.js, así como explorando la base de datos MongoDB, realizado desde el 2 de septiembre de 2024 hasta el 20 de febrero de 2025."
+    },
+    {
+      "title": "Actividades PCC GTP (Goes To Public)",
+      "desc": "Participé en el programa de formación en desarrollo web en SMAN 9 Semarang y en actividades sociales en el Orfanato Manarul Mabrur, desempeñándome como responsable de Relaciones Públicas, realizado el 13 de marzo de 2026."
+    },
+    {
+      "title": "Actividades de la Prueba de Competencia en RPL",
+      "desc": "El examen práctico final para validar habilidades técnicas en el campo de la Ingeniería de Software, realizado el 19 y 20 de noviembre de 2024."
+    },
+    {
+      "title": "Actividades de Regeneración PCC",
+      "desc": "El proceso de selección del nuevo administrador de PCC mediante el sitio web de votación electrónica (e-voting), desempeñándome como miembro del equipo web, realizado el 12 de abril de 2026."
+    }
+  ],
+  "close": "Cerrar"
+}

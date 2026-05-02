@@ -1,0 +1,26 @@
+{
+    "title" : "Sertifikat Ku",
+    "mycertificates" : [
+        {
+            "title" : "Sertifikat Magang PT Telkom Semarang",
+            "desc" : "Sertifikat Penghargaan telah menyelesaikan program magang PT Telkom Semarang."
+        },
+        {
+            "title" : "Sertifikat GTP (Goes To Public) PCC",
+            "desc" : "Sertifikat partisipasi dalam program GTP PCC sebagai PJ Humas."
+        },
+        {
+            "title" : "Sertifikat CyberSecurity Merdekasiber",
+            "desc" : "Sertifikat penyelesaian pelatihan cybersecurity oleh Merdekasiber."
+        }, 
+        {
+            "title" : "Sertifikat Flutter Android Study Jams",
+            "desc" : "Sertifikat penyelesaian kursus Flutter Android dari Himpunan Mahasiswa Informatika Universitas PGRI Semarang."
+        },
+        {
+            "title" : "Sertifikat Kompetensi Keahlian",
+            "desc" : "Sertifikat validasi kompetensi keahlian Rekayasa Perangkat Lunak (RPL)."
+        }
+    ],
+    "close" : "Tutup"
+}

@@ -1,4 +1,6 @@
 import { useState } from "react";
+import { useTranslation } from "react-i18next";
+
 import me from "../assets/Contact/me.png";
 import gmailIcon from "../assets/Icons/Gmail.png";
 import instagramIcon from "../assets/Icons/Instagram.png";
@@ -6,6 +8,7 @@ import githubIcon from "../assets/Icons/GitHub.png";
 import linkedinIcon from "../assets/Icons/LinkedIn.png";
 
 export default function Contact() {
+  const { t } = useTranslation("contact");
   const [active, setActive] = useState(null);
 
   const contacts = [
@@ -53,7 +56,7 @@ export default function Contact() {
       className="bg-[#0C1826] px-6 md:px-14 py-10 md:py-12 border-t border-white min-h-screen flex flex-col items-center justify-center space-y-12 overflow-hidden"
     >
       <h3 className="gabarito-medium text-4xl text-center text-yellow-500 font-bold">
-        Contact Me
+        {t("title")}
       </h3>
 
       <div className="relative flex flex-col md:flex-row items-center justify-center w-full max-w-6xl gap-5 md:gap-0">
@@ -96,7 +99,7 @@ export default function Contact() {
 
         {/* --- TAMPILAN MOBILE STATIS --- */}
         <div className="flex md:hidden flex-col space-y-4 w-full px-2 gabarito-medium">
-          <h4 className="text-center text-white text-xl gabarito-normal">How Do I Know You?</h4>
+          <h4 className="text-center text-white text-xl gabarito-normal">{t("sub_title")}</h4>
           {contacts.map((contact) => (
             <a
               href={contact.link}
@@ -123,7 +126,7 @@ export default function Contact() {
       </div>
 
       <h3 className="gabarito-medium text-center text-white text-lg md:text-xl italic opacity-80 px-4">
-        “I may not be perfect yet, but I'm improving every day.”
+        “{t("quotes")}”
       </h3>
     </div>
   );

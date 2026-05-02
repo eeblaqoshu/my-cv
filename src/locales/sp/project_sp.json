@@ -1,0 +1,30 @@
+{
+  "super_title": "Mis Proyectos",
+  "projects": [
+    {
+      "title": "Diseño de Perfil",
+      "description": "Diseñé una interfaz de perfil utilizando la herramienta Figma, prestando atención al tamaño de los componentes y al espaciado para lograr un diseño listo para usar."
+    },
+    {
+      "title": "Sitio Web del Clima",
+      "description": "Un sitio web del clima que permite seleccionar regiones utilizando la biblioteca React y la API de OpenWeather, mostrando información meteorológica en tiempo real."
+    },
+    {
+      "title": "Sitio Web de Lavandería",
+      "description": "Un sitio web para un negocio de lavandería creado con PHP como backend y MySQL como base de datos, con estilos usando Bootstrap 5.3. Incluye funciones para pedidos en línea, seguimiento del estado y gestión de clientes."
+    },
+    {
+      "title": "Sitio Web de E-Voting Regeneración PCC",
+      "description": "Diseño y desarrollo de un sitio web para las actividades de regeneración del UKM PCC, que muestra el proceso de elección del administrador de PCC para 2026."
+    },
+    {
+      "title": "Sitio Web de Calculadora Estadística",
+      "description": "Creación de un sitio web sencillo para facilitar a profesores y estudiantes la resolución rápida de problemas de estadística."
+    },
+    {
+      "title": "Sitio Web de CV",
+      "description": "Un sitio web de currículum vitae creado con React y Tailwind CSS, que muestra información personal y proyectos realizados durante mi pasantía en PT Telkom Semarang."
+    }
+  ],
+  "see_more": "Ver Proyecto"
+}

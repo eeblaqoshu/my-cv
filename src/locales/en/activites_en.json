@@ -1,0 +1,22 @@
+{
+    "title" : "My Activities",
+    "myactivities" : [
+        {
+            "title" : "Internship Activities at PT Telkom Semarang",
+            "desc" : "Studying web development using React and NodeJs, as well as exploring the MongoDB database, was held from September 2, 2024 to February 20, 2025."
+        },
+        {
+            "title" : "PCC GTP (Goes To Public) activities",
+            "desc" : "Participated in the web development training program at SMAN 9 Semarang and social service at the Manarul Mabrur Orphanage, acting as Public Relations Officer, which was carried out on March 13, 2026."
+        },
+        {
+            "title" : "RPL Expertise Competency Test Activities",
+            "desc" : "The final practical exam to validate technical skills in the field of Software Engineering, was held on November 19-20, 2024"
+        }, 
+        {
+            "title" : "PCC Regeneration Activities",
+            "desc" : "The process of selecting the successor to the PCC admin through the e-voting website, acting as a member of the Sie Web, was carried out on April 12, 2026."
+        }
+    ],
+    "close" : "Close"
+}

@@ -1,0 +1,26 @@
+{
+  "title": "Mis Certificados",
+  "mycertificates": [
+    {
+      "title": "Certificado de Prácticas en PT Telkom Semarang",
+      "desc": "Certificado de reconocimiento por completar el programa de prácticas en PT Telkom Semarang."
+    },
+    {
+      "title": "Certificado GTP (Goes To Public) PCC",
+      "desc": "Certificado de participación en el programa GTP PCC como responsable de Relaciones Públicas."
+    },
+    {
+      "title": "Certificado de Ciberseguridad Merdekasiber",
+      "desc": "Certificado de finalización de la formación en ciberseguridad impartida por Merdekasiber."
+    },
+    {
+      "title": "Certificado Flutter Android Study Jams",
+      "desc": "Certificado de finalización del curso de Flutter Android del Himpunan Mahasiswa Informatika de la Universidad PGRI Semarang."
+    },
+    {
+      "title": "Certificado de Competencia",
+      "desc": "Certificado de validación de competencias en Ingeniería de Software (RPL)."
+    }
+  ],
+  "close": "Cerrar"
+}

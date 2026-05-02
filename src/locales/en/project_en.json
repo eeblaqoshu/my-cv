@@ -1,0 +1,30 @@
+{
+    "super_title" : "My Projects",
+    "projects" : [
+        {
+            "title" : "Profile Design",
+            "description" : "Designing a profile design using the Figma tool, I made it by paying attention to the size of the components inside and the spacing, so that it displays a ready-to-use design."
+        },
+        {
+            "title" : "Weather Website",
+            "description" : "A weather website that can select regions with the React library and utilizes the OpenWeather API, this website displays weather information in real-time."
+        },
+        {
+            "title" : "Laundry Website",
+            "description" : "A laundry business website created with PHP as the backend and MySQL as the database, and styling using bootstrap 5.3, this website has features for ordering laundry services online, viewing order status, and managing customer data."
+        },
+        {
+            "title" : "E-Voting Regenerasi PCC Website",
+            "description" : "Designing and creating a website for PCC UKM regeneration activities, this website displays the PCC admin election process for 2026."
+        },
+        {
+            "title" : "Statistics Calculator Website",
+            "description" : "Create a simple website to make it easier for the public, especially teachers and students, to solve statistical mathematics problems quickly."
+        },
+        {
+            "title" : "CV Website",
+            "description" : "A curriculum vitae website created with the React and Tailwind CSS libraries, this website displays personal information and projects that I have worked on during my internship at PT Telkom Semarang."
+        }
+    ],
+    "see_more" : "See Project"
+}
